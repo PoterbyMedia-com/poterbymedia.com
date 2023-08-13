@@ -1,0 +1,114 @@
+header {
+  background: none;
+  background-image: none;
+}
+.sub_head {
+  margin: 0px;
+  padding: 30px 0px;
+  width: 100%;
+  background: rgba(227, 227, 227, 1);
+}
+.sub_head h1 {
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.sub_head h1:last-child {
+  font-family: 'Inter', sans-serif;
+  font-size: 58px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.funky img {
+  width: 50%;
+  margin: 0px 5%;
+}
+.work_about {
+  background: rgba(244, 244, 244, 1);
+  width: 100%;
+  padding: 100px 0px;
+  padding-top:5px;
+}
+.work_about p {
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  margin: 0px 5%;
+}
+.work_img .img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.work_img .img img {
+  width: 47%;
+}
+.work_img .detls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+.work_img .detls > div {
+  width: 30%;
+  height: 400px;
+  background: rgba(209, 207, 207, 1);
+  border-radius: 10px;
+}
+
+.challenge {
+  background: rgba(239, 239, 239, 1);
+  padding: 50px 0px;
+}
+.soln {
+  padding: 100px 0px;
+  padding-top:5px;
+}
+.result {
+  background: rgba(209, 207, 207, 1);
+  padding: 100px 0px;
+  padding-top:5px;
+}
+.result p,
+.soln p,
+.challenge p {
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+}
+
+@media (max-width: 700px){
+    .work_img .detls > div{
+        width:500px;
+        margin:20px 0px;
+    }
+}
+@media (max-width: 500px){
+    .work_img .detls > div{
+        width:90%;
+    }
+    .result p, .soln p, .challenge p {
+        font-family: 'Inter', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+    }
+}

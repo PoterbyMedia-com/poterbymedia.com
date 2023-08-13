@@ -1,0 +1,119 @@
+:root{
+    --bg-color:#ededed;
+}
+.main2{
+position: relative;
+  padding-top:  90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; overflow: hidden;
+}
+.main3{
+    /* padding: 20px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    overflow: hidden;
+    /* margin-left: -268px;; */
+/* background-color: red; */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+.main2 .scrollEdge i{cursor: pointer;}
+.main2 .scrollEdge{
+    position: absolute;
+    display: flex; height:calc(100% - 100px); z-index: 1;justify-content: center; align-items: center; padding: 0 20px;
+}
+.scrollEdge .ctrlbtn{
+    height: 40px; width: 40px;    border-radius: 50%;    background-color: rgb(249, 250, 251);   box-shadow: 1px 1px 5px rgb(180, 179, 179);    display: flex;  align-items: center;
+    justify-content: center;    font-size:1.3rem;
+}
+.main2 .right{
+ right: 0; 
+ background:linear-gradient( to right,
+#fafafa3e,
+    var(--bg-color),
+    var(--bg-color),
+    var(--bg-color)
+  )
+}
+.main2 .left{
+left: 0; background:linear-gradient( to left,
+#fafafa3e,
+    var(--bg-color),
+    var(--bg-color),
+    var(--bg-color)
+  )
+}
+
+.main2_text{
+    margin-top: -15px;
+    padding:0  15px;
+}
+.image{
+    width: 100%; 
+    height: 100%;  
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+.image_wrapper{
+     width: 100%; 
+     height: 100%;
+}
+.main2_wrapper{
+    /* background-color: white; */
+    height: 100px;
+    width: 300px;
+
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 0px 25px 0px rgb(223, 217, 217); */
+}
+.main2_wrapper:hover{
+  background-color: #f1f1f162;
+  /* height: 105px; */
+  width: 315px;
+}
+.p3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*  */
+.slideInRight {
+    animation-name: slideInRight2;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  @keyframes slideInRight2 {
+    from {
+      
+      transform: translateX(100%);
+    }
+    to {
+      
+      transform: translateX(0%);
+    }
+  }
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+@keyframes slideInLeft {
+from {
+    transform: translateX(-100%);
+    
+}
+to {
+    
+    transform: translateX(0%);
+}
+}
