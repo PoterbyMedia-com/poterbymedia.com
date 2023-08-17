@@ -449,10 +449,7 @@ body {
   .section-description {
     padding: 0 8rem;
   }
-  .about-imageContent img {
-    height: -webkit-fill-available;
 
-  }
   .aboutImg-textBox {
     padding: 1.5rem 2rem;
   }

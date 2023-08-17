@@ -170,10 +170,90 @@ line-height: 72px; /* 130.909% */
 
 
 @media screen and (max-width: 1050px) {
-  .smmaslide{
-    padding-left: 20px;
+  .smmaslide {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+  .smmatextbox{
+    gap:10px;
+    padding-right: 5px;
+  }
+  .smmatext{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+  }
+
+  .smmatextbox .text {
+    width: auto;
+    font-size: 12px;
+    
+
+  }
+  .smmaslide img{
+    width: 162px !important;
+    display: inherit;
+    place-self: flex-start;
+  }
+  .smmatab1{
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+    padding-left: 10px;
     padding-right: 20px;
-    justify-content: center;
-    align-items: center;
-  
+    padding-top: 20px;
+  }
+
+  .smmatab1heading h1{
+    text-align: center;
+    width: min-content;
+    text-wrap: nowrap;
+    padding: 0px;
+    font-size: 20px;
+  }
+
+  .smmaimg1 {
+    position: inherit;
+    padding-left: 0px;
+    padding-top: 0px;
+    
+  }
+
+  .smmaimg1 img{
+    width: 50px;
+  }
+
+  .headxx {
+    margin-top: 0px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+  .tab1{
+    margin-top: 30px;
+    flex-direction: column-reverse;
+    padding: 5px;
+    text-align: center;
+  }
+  .tab1 img{
+    width: 100%;
+  }
+  .tab1 .tab1text {
+    
+    padding-right: 0px;
+  }
+  .tab1 .tab1header p {
+    
+    font-size: 30px;
+  }
+  .tab1 p.tab1bodytext {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 50px;
+}
 }
