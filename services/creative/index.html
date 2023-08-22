@@ -37,7 +37,7 @@
     <div class="top-class">
       <div class="logo"><a href="/img/poterbyicon.png"><img src="/img/poterbyicon.png" alt="Poterby Media Logo" class="logo"/></a></div>
       <div class="mob-phone"><a href="tel:+234 705 168 6368">+234 705 168 6368</a></div>
-      <div class="menu-icon" id="toggle"><img src="../img/hamburger.svg" alt="" class="menu-icon"></div>
+      <div class="menu-icon" id="toggle"><img src="/img/hamburger.svg" alt="" class="menu-icon"></div>
     </div>
     <ul class="nav-links">
       <li><a href="/">Home</a></li>
@@ -54,7 +54,7 @@
 
   <section class="smmaslide">
     <div class="smmatextbox">
-      <div class="smmatext"><h1>Creatie</h1></div>
+      <div class="smmatext"><h1>Creative</h1></div>
         <p class="text">
           From innovative branding strategies to mesmerizing graphic design, we're dedicated to helping your brand shine in the digital landscape.
         </p>
@@ -225,7 +225,15 @@
 
 
 
-  
+  <script>
+    // JavaScript code for toggling the mobile menu
+    const menuToggle = document.getElementById('toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 
 
 

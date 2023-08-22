@@ -116,25 +116,7 @@ function reveal() {
 }
 
 
-// let prod = document.getElementById("#recent_works")
-// const productContainer = prod.querySelector(".rw");
-// console.log(productContainer);
-// console.log(prod)
-// let productItemWidth;
 
-// function click(){
-//     productContainer.scrollBy({ left: productItemWidth, behavior: "smooth" });
-// }
-// click()
-// // console.log(click());
-// setInterval( ()=>{
-//     click()
-//     "jump"
-// }, 3000)
-
-
-
-// const servicesModule = JSON.parse(localStorage.getItem('products'));
 let carouselCont =document.querySelector('.coverage .main3')
 let all = [
     "img/recent.png",

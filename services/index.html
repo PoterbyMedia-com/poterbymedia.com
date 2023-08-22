@@ -25,7 +25,7 @@
   <meta name="robots" content= "index, follow">
 
   <link rel="stylesheet" href="/index.css"/>
-  <link rel="stylesheet" href="/header.css" />
+  <link rel="stylesheet" href="/header.css"/>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +37,7 @@
     <div class="top-class">
       <div class="logo"><a href="/img/poterbyicon.png"><img src="/img/poterbyicon.png" alt="Poterby Media Logo" class="logo"/></a></div>
       <div class="mob-phone"><a href="tel:+234 705 168 6368">+234 705 168 6368</a></div>
-      <div class="menu-icon" id="toggle"><img src="../img/hamburger.svg" alt="" class="menu-icon"></div>
+      <div class="menu-icon" id="toggle"><img src="/img/hamburger.svg" alt="" class="menu-icon"></div>
     </div>
     <ul class="nav-links">
       <li><a href="/">Home</a></li>
@@ -227,6 +227,21 @@
       </div>
     </div>
   </section>
+  
+  <script>
+    // JavaScript code for toggling the mobile menu
+    const menuToggle = document.getElementById('toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="../src/script.js"> </script>
+  <script src="../src/index.js"></script>
 
   <footer>
     <h3>We go the extra mile to deliver</h3>
@@ -242,9 +257,9 @@
       </div>
     <p>Copyright &copy; 2023 Poterby LTD.</p>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="../src/script.js"></script>
-  <script src="../src/index.js"></script>
+
+
+
+
 </body>
 </html>
