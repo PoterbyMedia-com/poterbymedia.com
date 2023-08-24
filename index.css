@@ -918,6 +918,13 @@ width: 100%;
   align-items: center;
   justify-content: center;
 }
+
+.tab1 .tab1image img{
+  width: 600px;
+  height: 380px;
+  object-fit: cover;
+  padding-left: 50px;
+}
   
 /*TAB2*/
 .tab2{
@@ -990,6 +997,15 @@ width: 100%;
   align-items: center;
   justify-content: center;
 }
+
+.tab1background .tab1backgroundimage img{
+  width: 600px;
+  height: 380px;
+  object-fit: cover;
+  padding-left: 50px;
+}
+
+
 
 
 
