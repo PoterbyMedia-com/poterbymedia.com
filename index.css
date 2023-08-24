@@ -960,6 +960,13 @@ width: 100%;
   padding-bottom: 30px;
 }
 
+.tab2 .tab2image img{
+  width: 600px;
+  height: 380px;
+  object-fit: cover;
+  padding-left: 50px;
+}
+
 /*TAB 1 BACKGROUND*/
 .tab1background{
   background-color:#e9f8ff;
@@ -1044,6 +1051,13 @@ width: 100%;
   font-size: 1.125rem;
   line-height: 1.8;
   padding-bottom:30px;
+}
+
+.tab2background .tab2backgroundimage img{
+  width: 600px;
+  height: 380px;
+  object-fit: cover;
+  padding-left: 50px;
 }
 
 
