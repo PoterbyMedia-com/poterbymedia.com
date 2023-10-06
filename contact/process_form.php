@@ -29,6 +29,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // If the request method is not POST, redirect to the contact page
-    header("Location: contact.html");
+    header("Location: contact");
 }
 ?>

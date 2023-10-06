@@ -249,24 +249,7 @@ body {
 margin-top: 20px;
 margin-bottom: 20px;
 
-
-.brand_link {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #000000;
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.brand_link:hover {
-  background-color: #45a049;
-}
-
-.brand_link {
+a.brand_link {
   display: inline-block;
   padding: 10px 20px;
   background-color: #007bff;
@@ -279,7 +262,27 @@ margin-bottom: 20px;
   transition: background-color 0.3s ease-in-out;
 }
 
-.brand_link:hover {
+a.brand_link:hover {
+  background-color: #0056b3;
+}
+
+
+
+.ctalink {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  height: fit-content;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.ctalink:hover {
   background-color: #0056b3;
 }
 /* BUTTON END */
