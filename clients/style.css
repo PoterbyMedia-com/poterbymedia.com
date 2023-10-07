@@ -21,9 +21,10 @@
 .client_details {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 .client_details .clientstable {
   padding: 20px;
@@ -128,7 +129,7 @@
     display: block;
   }
   .client_details {
-    flex-direction: column;
+    
   }
   .sub_head h1:last-child{
     font-size: 28px;

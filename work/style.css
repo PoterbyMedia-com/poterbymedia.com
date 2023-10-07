@@ -64,6 +64,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px; /* Adjust the gap as needed */
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .image-container {
