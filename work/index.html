@@ -56,30 +56,14 @@
   </div>
   
   <div class="tab-container">
-    <div class="tab" onclick="openTab('tab1')">Digital Marketing</div>
-    <div class="tab" onclick="openTab('tab2')">Development</div>
-    <div class="tab" onclick="openTab('tab3')">Creative</div>
+    <div class="tab" onclick="openTab('Digital marketing')">Digital Marketing</div>
+    <div class="tab" onclick="openTab('Development')">Development</div>
+    <div class="tab" onclick="openTab('Creative')" >Creative</div>
   </div>
       
   <section id="tab1-content" class="tab-content active">
     <!-- Add your images and links here for Tab 1 -->
-    <div class="work-slot">
-      <img class="imagez" src="/img/Bangbet.com Logo.jpg" alt="Bangbet">
-      <h1><a href="https://www.example.com">Visit Example.com</a></h1>
-      <div class="image-headingz"><a href="#tag1">#Digital Marketing</a></div>
-    </div>
-
-    <div class="work-slot">
-      <img class="image" src="/img/AGM.jpg" alt="Bangbet">
-      <h1><a href="https://www.example.com">Visit Example.com</a></h1>
-      <div class="image-heading"><a href="#tag1">#Digital Marketing</a></div>
-    </div>
-
-    <div class="work-slot">
-      <img class="image" src="/img/charislakecreative.webp" alt="Bangbet">
-      <h1><a href="https://www.example.com">Visit Example.com</a></h1>
-      <div class="image-heading"><a href="#tag1">#Digital Marketing</a></div>
-    </div>
+  
   </section>
     
 
@@ -87,7 +71,7 @@
 
 
   <!-- Other 3 -->
-  <div id="tab2-content" class="tab-content">
+  <div hidden id="tab2-content" class="tab-content">
     <div class="image-container">
       <div class="image-slot">
         <img class="image" src="/img/Samuelbrig graphics.jpeg" alt="Bangbet">
@@ -114,15 +98,12 @@
 
   </div>
 
-  <div id="tab3-content" class="tab-content"></div>
+ 
   </section>
   
 
-
-
-
-
   <script>
+    /*
     // JavaScript function to open a tab
     function openTab(tab1) {
         // Hide all tab contents
@@ -152,6 +133,58 @@
 
     // Set the first tab as active by default
     openTab('tab1');
+    
+    */
+
+
+    const data = [
+      {id:1, name: 'digital marketing', url: '/img/Samuelbrig graphics.jpeg'},
+      {id:2, name: 'digital marketing', url: '/img/ipayBTC_SM_13.png'},
+      {id:3, name: 'development', url: '/img/AGM.jpg'},
+      {id:4, name: 'digital marketing', url: '/img/Dripylux.jpg'},
+      {id:5, name: 'development', url: '/img/Eazzy Eats Logo.png'},
+      {id:6, name: 'creative', url: '/img/Glovo Logo.png'},
+      {id:7, name: 'creative', url: '/img/SamuelbBrig Real estate graphic design.webp'},
+      
+      
+    ]
+
+    function displayImages(data) {
+     let container =  document.getElementById("tab1-content")
+     container.innerHTML = ''
+
+     data.forEach(item => {
+      container.innerHTML += ` <div class="work-slot">
+     <div> <img class="image" src="${item.url}" alt="Bangbet"></div>
+      <h1><a href="https://www.example.com">Visit Example.com</a></h1>
+      <div class="image-headingz"><a href="#tag1">#${item.name}</a></div>
+    </div>
+`
+     })
+
+    }
+
+    displayImages(data)
+
+    function openTab(name) {
+      const filteredData = data.filter((item) => item.name.toLowerCase() === name.toLowerCase())
+      displayImages(filteredData)
+
+    
+      const buttons = document.querySelectorAll('.tab');
+      buttons.forEach(button => {
+        if (button.textContent.toLowerCase() === name.toLowerCase()) {
+          button.classList.add('active-class')
+        }
+        else {
+          button.classList.remove('active-class')
+        }
+        
+      });
+
+    //  const activeButton = document.getElementById(category + 'Btn');
+      //activeButton.classList.add('active');
+    }
   </script>
 
 

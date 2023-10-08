@@ -1,3 +1,9 @@
+html body {
+width:100%;
+height:100%;
+overflow-x: hidden;
+}
+
 .works {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -44,46 +50,43 @@
   background-color: #2980b9;
 }
 
+.active-class {
+  background-color: #2980b9;
+}
+
 .tab-content.active {
   display: flex !important;
   flex-wrap: wrap;
   flex-direction: row;
   /*grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))*/
-  gap: 30px;
-  margin-top: 40px;
+  gap: 1rem;
+  margin-top:2rem;
+  margin-bottom:5rem;
   border-radius: 16px;
-
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding:0px 1rem;
   justify-content: center;
-  min-height: 100vh;
-
-  height: 400px;
-  width: 400px;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  width:100%;
+ 
 
 }
 
 .work-slot{
-  height: 400px;
-  width: 400px;
-  : 10px;
+  height: 300px;
+  width: 280px;
+
 }
 
+.work-slot div  {
+  width:280px;
+  height: 250px;
+  border-radius: 6px;
 
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1050px) {
+}
+.work-slot div .image {
+  width:100%;
+  height: 100%;
+  border-radius: 6px;
+}
 
