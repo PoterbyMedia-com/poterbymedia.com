@@ -45,15 +45,15 @@
       <li><a href="/about">About</a></li>
       <li><a href="/contact">Contact</a></li>
       <li><a href="/blog">Blog</a></li>
-      <li><a href="/meta/">Meta</a></li> 
     </ul>
     <div class="phone"> <a href="tel:+234 705 078 2156">+234 705 078 2156</a> </div>
   </nav>
 
-  <section class="works">
+  <div class="works">
     <div class="header">
         <h1>Our Works</h1>
     </div>
+  </div>
   
   <div class="tab-container">
     <div class="tab" onclick="openTab('tab1')">Digital Marketing</div>
@@ -64,9 +64,9 @@
   <section id="tab1-content" class="tab-content active">
     <!-- Add your images and links here for Tab 1 -->
     <div class="work-slot">
-      <img class="image" src="/img/Bangbet.com Logo.jpg" alt="Bangbet">
+      <img class="imagez" src="/img/Bangbet.com Logo.jpg" alt="Bangbet">
       <h1><a href="https://www.example.com">Visit Example.com</a></h1>
-      <div class="image-heading"><a href="#tag1">#Digital Marketing</a></div>
+      <div class="image-headingz"><a href="#tag1">#Digital Marketing</a></div>
     </div>
 
     <div class="work-slot">
@@ -124,7 +124,7 @@
 
   <script>
     // JavaScript function to open a tab
-    function openTab(tabId) {
+    function openTab(tab1) {
         // Hide all tab contents
         var tabContents = document.querySelectorAll('.tab-content');
         tabContents.forEach(function (content) {
