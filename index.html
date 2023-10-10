@@ -27,7 +27,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="robots" content= "index, follow">
 
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="index.css"/>
   <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/fontawesome-free-6.0.0-beta3-web/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,800&family=Varela&family=Varela+Round&display=swap" rel="stylesheet">
@@ -99,7 +99,11 @@
   <section class="partner-tab"> 
     <img src="/img/trend.svg" alt="" class="arrow"/>
     <img src="/img/trend.svg" alt="" class="arrow-monitor"/>
-    <div class="note">
+    <div data-aos="fade-right"
+    data-aos-delay="30"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+    class="note">
       <div class="head">Your growth partner </div>
         <p class="text">
           We have put together hundreds of successful
@@ -111,7 +115,11 @@
         <a class="ctalink" href="https://poterbymedia.com/contact/">Enquire</a>
     </div>
 
-    <div class="img-con"><div class="img"><img src="/img/istockphoto-1456322124-612x612.jpg"/></div>
+    <div data-aos="fade-left"
+    data-aos-delay="30"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+    class="img-con"><div class="img"><img src="/img/istockphoto-1456322124-612x612.jpg"/></div>
   </section>
 
   <section>
@@ -159,8 +167,13 @@
   </section>
 
 
-  <section class="eye_catching">
-    <div class="note"><div>
+  <section class="partner-tab">
+    <div
+    data-aos="fade-right"
+    data-aos-delay="30"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+    class="note"><div>
       <div class="head">Eye-catching graphics</div>
         <p class="text">
           Our packages include stunning graphics that are designed for your brand.
@@ -171,10 +184,14 @@
       </div>
     </div>
 
-      <div class="picz"><img src="img/Rectangle 31.png" alt="Poterby Media agency" /></div>
+      <div data-aos="fade-left"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      class="img-con">><img src="img/Rectangle 31.png" alt="Poterby Media agency" /></div>
       
   </section>
-  <a class="ctalink" href="https://www.designrush.com/agency/profile/poterby-media">Send me a proposal</a> 
+ 
 
   <section>
     <div class="client">
@@ -218,8 +235,16 @@
 
 
   <section> 
-    <div class="about"> 
-      <p>
+    <div
+   
+    class="about"> 
+      <p
+      data-aos="zoom-in"
+      data-aos="fade-left"
+    
+      data-aos-duration="500"
+      data-aos-easing="ease-in-out"
+      >
         “ We’re a team of award-winning strategists, creatives, developers, designers writers, illustrators, animators + digital producers who crafts brands for the digital age. We specialize in bringing stunning creativity into the real world with a meaningful experience. ”
       </p>
     </div>
@@ -317,5 +342,9 @@
       });
   </script>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

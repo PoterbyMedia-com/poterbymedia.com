@@ -62,11 +62,11 @@
     </div>
 
     <div  class="services">
-      <span data-aos="fade-in"  data-aos-delay="30"
+      <span class="service_card" data-aos="fade-in"  data-aos-delay="30"
       data-aos-duration="300"><img src="img/Commercial.png" alt="poterby image"/> <p>Digital Marketing</p></span>
-      <span data-aos="fade-in"  data-aos-delay="30"
+      <span class="service_card" onclick="development()" data-aos="fade-in"  data-aos-delay="30"
       data-aos-duration="300"><img src="img/Folded Booklet.png" alt="poterby image"/> <p>Development</p></span>
-      <span data-aos="fade-in"  data-aos-delay="30"
+      <span class="service_card" onclick="creativity()" data-aos="fade-in"  data-aos-delay="30"
       data-aos-duration="300"><img src="img/Folded Booklet.png" alt="poterby image"/> <p>Creative</p></span>
     </div>
   </section>
@@ -334,6 +334,52 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <script>
+
+    function development () {
+     if (window.innerWidth < 901) {
+      window.scrollTo({
+  top: 2700,
+  behavior: 'smooth'
+});
+     }
+     else if (window.innerWidth > 901 && window.innerWidth < 1280) {
+      window.scrollTo({
+  top: 1900,
+  behavior: 'smooth'
+});
+     }
+else {
+  window.scrollTo({
+  top: 1200,
+  behavior: 'smooth'
+});
+}
+    }
+    function creativity() {
+      if (window.innerWidth < 901) {
+        window.scrollTo({
+  top: 4900,
+  behavior: 'smooth'
+});
+     }
+     else if (window.innerWidth > 901 && window.innerWidth < 1280) {
+      window.scrollTo({
+  top: 2800,
+  behavior: 'smooth'
+});
+     }
+else {
+  window.scrollTo({
+  top: 2200,
+  behavior: 'smooth'
+});
+}
+     
+
+    }
   </script>
 </body>
 </html>

@@ -505,7 +505,8 @@ a.brand_link:hover {
 .about p{
   font-size: 30px;
   text-align: center;
-  font-weight: 700;
+  line-height:60px;
+  font-weight: 600;
 }
 
 .rd {
@@ -906,7 +907,7 @@ width: 100%;
   position: absolute;
   bottom:-30px;
   right:-10px;
-  transform: rotate(-90deg);
+  transform: rotate(-120deg);
 
 }
 
@@ -1606,6 +1607,7 @@ footer .social_link .copyright {
   }
   .about p{
     font-size: 20px;
+    line-height:30px;
   }
 
   .black_proposal{

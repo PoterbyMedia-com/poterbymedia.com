@@ -42,6 +42,7 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 10px;
+  cursor: pointer;
   margin: 10px;
 }
 
@@ -55,8 +56,13 @@ section {
 .head > .services span img {
   width: 100px;
   height: 100px;
+ 
 }
 
+.service_card:hover  img {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in;
+}
 
 /* Styles for the services sectionszzzz section */
 /* Styles for service section 1 */
