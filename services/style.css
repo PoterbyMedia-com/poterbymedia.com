@@ -1,11 +1,16 @@
 /* Styles for the head section */
 .head > div {
   margin: 20px 0px;
+} 
+
+section {
+  padding:0px 4px;
+
 }
 
 .head > .heading p {
   font-family: 'Lora', serif;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 400;
   line-height: 82px;
   letter-spacing: 0em;
@@ -24,6 +29,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  width:100%;
 }
 .head > .services span {
   display: flex;
@@ -55,15 +62,16 @@
 /* Styles for service section 1 */
 
 .servicesection1,
-.servicesection2 {
+.servicesection2,
+.servicesection3 {
   margin-bottom: 50px;
 }
 
-.servicesection1
+.servicesection1 h3,
 .servicesection2 h3 {
   text-align: center;
   font-size: 28px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 .servicesection1,
@@ -73,7 +81,8 @@
 
 /* Styles for service 1 */
 .service1,
-.service2 {
+.service2,
+.service3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -84,15 +93,8 @@
   margin-top: 40px;
 }
 
-.smm,
-.oa,
-.cm,
-.wdd,
-.em,
-.ppc,
-.im,
-.add,
-.str {
+
+.cards {
   width: 400px;
   height: 450px;
   margin: 20px 10px;
@@ -102,8 +104,21 @@
 }
 
 
+.cards p {
+line-height: 21px;
+text-align: center;
+}
+
+.cards h5 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
 .service1 > h3,
-.service2 > h3 {
+.service2 > h3,
+.service3 > h3 {
   font-family: 'Lexend', sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -113,24 +128,30 @@
   padding-top: 60px;
 }
 .service1 > p,
-.service2 > p {
+.service2 > p,
+.service3 > p  {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
 }
 .service1 > div,
-.service2 > div {
+.service2 > div,
+.service3 > div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+.service3 {
+  margin-bottom:30px;
+}
 .service1 div h5
-.service2 div h5 {
+.service2 div h5,
+.service3 div h5 {
   font-family: 'Lexend', sans-serif;
   font-size: 32px;
   font-weight: 400;
@@ -154,17 +175,20 @@
 .service1 .smm {
   background: rgba(232, 240, 254, 1);
 }
-.service1 .oa {
+.service1 .oa,
+.service3 .oa {
   background: rgba(239, 247, 207, 1);
 }
-.service1 .cm {
+.service1 .cm,
+.service3 .cm {
   background: rgba(230, 244, 234, 1);
 }
-.service1 .wdd {
-  background: rgba(56, 56, 56, 1);
-  color: white;
+.service2 .wdd {
+  background: rgb(233, 231, 231);
+ 
 }
-.service1  .em {
+.service1  .em, 
+.service3  .em {
   background: rgba(252, 232, 230, 1);
 }
 .service1 .ppc {
@@ -173,40 +197,13 @@
 .service1 .im {
   background: rgba(232, 240, 254, 1);
 }
-.service1 .add {
+.service2 .add {
   background: rgba(239, 247, 207, 1);
 }
-.service1 .str {
+.service1 .str,
+.service3 .str {
   background: rgba(230, 244, 234, 1);
 }
-
-.smm h5,
-.oa h5,
-.cm h5,
-.wdd h5,
-.em h5,
-.ppc h5,
-.im h5,
-.add h5,
-.str h5 {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.smm p,
-.oa p,
-.cm p,
-.wdd p,
-.em p,
-.ppc p,
-.im p,
-.add p,
-.str p {
-  text-align: justify;
-}
-
-
 
 
 /* Styles for service section 2 */
@@ -228,7 +225,7 @@
 .ud p,
 .ex p,
 .ppc p {
-  text-align: justify;
+  
 }
 
 .gd,
@@ -364,4 +361,62 @@
     width: 50px;
     height: 50px;
 }
+}
+
+@media screen and (max-width: 750px){
+  .head > .heading p {
+   
+    font-size: 30px;
+  
+  }
+
+  .head > .services {
+   flex-direction: column;
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   padding:0px 40px;
+  }
+
+  .head > .services span { 
+    width: 400px;
+  }
+
+  .service1,
+.service2,
+.service3 {
+  gap: 15px;
+ 
+}
+
+  .cards {
+    width: 400px;
+    height: fit-content;
+    min-height: 400px;
+    margin: 10px 10px;
+  
+  }
+  
+}
+
+
+@media screen and (max-width: 600px){
+  .head > .services {
+  
+    padding:0px 10px;
+   }
+ 
+   .head > .services span { 
+     width: 100%;
+   }
+  
+  .cards {
+    width: 100%;
+    height: fit-content;
+    min-height: 420px;
+    margin: 10px 10px;
+  
+  }
+
 }
