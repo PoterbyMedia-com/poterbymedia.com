@@ -23,7 +23,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <meta name="robots" content= "index, follow">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="/index.css"/>
   <link rel="stylesheet" href="/header.css"/>
   <link rel="stylesheet" href="style.css"/>
@@ -45,13 +45,13 @@
       <div class="menu-icon" id="toggle"><img src="/img/hamburger.svg" alt="" class="menu-icon"></div>
     </div>
     <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/work">Works</a></li>
-      <li><a href="/clients">Clients</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/blog">Blog</a></li>
+      <li><a class="navs" href="/">Home</a></li>
+      <li><a class="navs" href="/services">Services</a></li>
+      <li><a class="navs" href="/work">Works</a></li>
+      <li><a class="navs" href="/clients">Clients</a></li>
+      <li><a class="navs" href="/about">About</a></li>
+      <li><a class="navs" href="/contact">Contact</a></li>
+      <li><a class="navs" href="/blog">Blog</a></li>
     </ul>
     <div class="phone"><a href="tel:+234 705 078 2156">+234 705 078 2156</a></div>
   </nav>
@@ -61,20 +61,32 @@
       <p>Our Services</p>
     </div>
 
-    <div class="services">
-      <span><img src="img/Commercial.png" alt="poterby image"/> <p>Digital Marketing</p></span>
-      <span><img src="img/Folded Booklet.png" alt="poterby image"/> <p>Development</p></span>
-      <span><img src="img/Folded Booklet.png" alt="poterby image"/> <p>Creative</p></span>
+    <div  class="services">
+      <span data-aos="fade-in"  data-aos-delay="30"
+      data-aos-duration="300"><img src="img/Commercial.png" alt="poterby image"/> <p>Digital Marketing</p></span>
+      <span data-aos="fade-in"  data-aos-delay="30"
+      data-aos-duration="300"><img src="img/Folded Booklet.png" alt="poterby image"/> <p>Development</p></span>
+      <span data-aos="fade-in"  data-aos-delay="30"
+      data-aos-duration="300"><img src="img/Folded Booklet.png" alt="poterby image"/> <p>Creative</p></span>
     </div>
   </section>
 
-  <section div class="servicesection">
+  <section div   data-aos="fade-up"
+  data-aos-delay="30"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out"
+   class="servicesection">
     <div class="servicesection1">
       <h3>Digital Marketing</h3>
       <p>Poterby Media Services offers digital solutions for businesses seeking to establish a strong online presence.</p></div>
 
     <div class="service1">
-      <div class="smm"><h5>Social Media <br/> Marketing</h5>
+      <div 
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      class="cards smm"><h5>Social Media <br/> Marketing</h5>
         <p>
           Social media has changed the way brands communicate with their customers,<br/>
           regardless of their business model.<br/>
@@ -89,7 +101,13 @@
         <a class="ctalink" href="https://poterbymedia.com/services/socialmediamarketing/">Enquire</a>
       </div>
 
-      <div class="oa"><h5>Online Advertising</h5>
+      <div 
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      
+      class="cards oa"><h5>Online Advertising</h5>
         <p>
           Startup? Exhibition? Sales? You need the right hand to handle your online advertising anenue.<br/><br/>
   
@@ -100,7 +118,12 @@
         <a class="ctalink" href="https://poterbymedia.com/services/onlineadvertising/">Enquire</a>
       </div>
 
-      <div class="em"><h5>Email Marketing</h5>
+      <div
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      class="cards em"><h5>Email Marketing</h5>
         <p> 
           We make sure you get in your customers inboxes, and keep 
           giving your customers information that is valuable to them so they remain 
@@ -109,7 +132,12 @@
         <a class="ctalink" href="https://poterbymedia.com/services/emailmarketing/">Enquire</a>
       </div>
 
-      <div class="ppc"><h5>PPC</h5>
+      <div 
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      class="cards ppc"><h5>PPC</h5>
         <p> 
           Defacto and one of the most efficent way to run an online ad. 
           We offer strategy needed to out pace your competitior by vying for top on each ppc enabled platforms 
@@ -118,27 +146,36 @@
         <a class="ctalink" href="https://poterbymedia.com/services/onlineadvertising/payperclickadvertising/">Enquire</a>
       </div>
 
-      <div class="im"><h5>Influencer marketing</h5>
-        <p>         
-          We use influencers to promote a brand to a larger market.
-          Influencers are opinion leaders with a social following base.  
-          They appear as experts or trustworthy sources of information. 
-          80% of users have purchased something based on an influencer's  recommendation.
+      <div 
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
 
-          The statistical dominance in this type of
-          marketing strategyover every other makes it
-          one of our favourites, and Poterby  leverages 
-          this to productively reach your goal. <br/>
+      
+      class="cards im"><h5>Influencer marketing</h5>
+        <p>         
+          We leverage influencers, who are trusted opinion leaders with large social followings, to effectively promote brands. Their recommendations lead to a significant 80% conversion rate among users, making this marketing strategy a top choice for us at Poterby to help you achieve your goals.
         </p>
         <a class="ctalink" href="https://poterbymedia.com/services/socialmediamarketing/">Enquire</a>
       </div>
     </div>
 
-    <div class="servicesection1"><h3>Development</h3>
+    <div
+    data-aos="fade-up"
+    data-aos-delay="30"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+    class="servicesection1"><h3>Development</h3>
       <p>A customer experience future that is good for people and business</p></div>
 
     <div class="service2">
-      <div class="wdd"><h5>Website <br/>Design & Development</h5>
+      <div
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      class="cards wdd"><h5>Website <br/>Design & Development</h5>
         <p>
           You need a fully functional website build to support your digital growth strategy. 
           We've built websites for several brands around the world
@@ -147,7 +184,13 @@
         <a class="ctalink" href="https://poterbymedia.com/services/development/">Enquire</a>
       </div>
 
-      <div class="br"><h5>Branding</h5>
+      <div 
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      
+      class="cards br"><h5>Branding</h5>
         <p>
           Refers to the business and marketing concept that helps people identify a particular company, product, or individual.  
           As such, they help shape people's perceptions of companies, their products, or individuals.
@@ -155,7 +198,12 @@
         <a class="ctalink" href="https://poterbymedia.com/services/creative/">Enquire</a>
       </div>
 
-      <div class="add"><h5>App <br/> Design & Development</h5>
+      <div
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      class="cards add"><h5>App <br/> Design & Development</h5>
         <p>
           We are one of the leading innovative graphic design 
           agencies in Lagos, dedicated to boosting our client's 
@@ -167,7 +215,12 @@
         <a class="ctalink" href="https://poterbymedia.com/services/development/">Enquire</a>
       </div>
 
-      <div class="ud"><h5>UI/UX Design</h5>
+      <div 
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      class="cards gd"><h5>UI/UX Design</h5>
         <p> 
           User Interface and User Experience is a must with web 2.0 and we are at the fore front of delivering amazing designs that suits your need.
         </p>
@@ -176,11 +229,21 @@
 
     </div>
 
-    <div class="servicesection1"><h3>Creative</h3>
+    <div 
+    data-aos="fade-up"
+    data-aos-delay="30"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+    class="servicesection1"><h3>Creative</h3>
       <p>A customer experience future that is good for people and business</p></div>
 
     <div class="service3">
-      <div class="gd"><h5>Graphic Design</h5>
+      <div
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      class="cards em"><h5>Graphic Design</h5>
         <p>
           We are one of the leading innovative graphic design 
           agencies in Lagos, dedicated to boosting our client's 
@@ -192,7 +255,12 @@
         <a class="ctalink" href="https://poterbymedia.com/services/creative/">Enquire</a>
       </div>
 
-      <div class="br"><h5>Branding</h5>
+      <div
+      data-aos="fade-up"
+  data-aos-delay="30"
+  data-aos-duration="700"
+  data-aos-easing="ease-in-out" 
+      class="cards str"><h5>Branding</h5>
         <p>
           Refers to the business and marketing concept that helps people identify a particular company, product, or individual.  
           As such, they help shape people's perceptions of companies, their products, or individuals.
@@ -200,7 +268,12 @@
         <a class="ctalink" href="https://poterbymedia.com/services/creative/">Enquire</a>
       </div>
 
-      <div class="ppc"><h5>Printing </h5>
+      <div 
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      class="cards cm"><h5>Printing </h5>
         <p> 
           Global standard in Print quality. We have a standalone printing hub for all your printing need. 
           We print Flyer, banner, notepad, pen and on tshirts, pillboxes etc alongside ontime delivery.
@@ -208,7 +281,12 @@
         <a class="ctalink" href="https://poterbymedia.com/services/creative/">Enquire</a>
       </div>
 
-      <div class="ex"><h5>Experimental</h5>
+      <div
+      data-aos="fade-up"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      class="cards oa"><h5>Experimental</h5>
         <p>
           From Exhibition / Trade fair & Conference Booth design to billboard placement, we deliver right on time.
         </p>
@@ -232,24 +310,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script type="text/javascript" src="../src/script.js"> </script>
   <script src="../src/index.js"></script>
-
   <footer>
-    <h3>We go the extra mile to deliver</h3>
-      <div class="social_link">
-        <ul>
-          <li><a href="https://www.facebook.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/facebook.png"/></a></li>
-          <li><a href="https://www.instagram.com/poterby"><img src="https://img.icons8.com/sf-ultralight/25/000000/instagram-new.png"/> </a></li>
-          <li><a href="https://www.pinterest.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/null/pinterest.png"/></a></li>
-          <li><a href="https://www.linkedin.com/company/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/linkedin.png"/></a></li>
-          <li><a href="https://twitter.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/twitter.png"/></a></li>
-        </ul>
-        <p><a href="mailto:info@poterbymedia.com">info@poterbymedia.com</a></p>
-      </div>
-    <p>Copyright &copy; 2023 Poterby LTD.</p>
-  </footer>
+    
+    <div class="social_link">
+      <ul>
+        <li><a href="https://www.facebook.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/facebook.png"/></a></li>
+        <li><a href="https://www.instagram.com/poterby"><img src="https://img.icons8.com/sf-ultralight/25/000000/instagram-new.png"/> </a></li>
+        <li><a href="https://www.pinterest.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/null/pinterest.png"/></a></li>
+        <li><a href="https://www.linkedin.com/company/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/linkedin.png"/></a></li>
+        <li><a href="https://twitter.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/twitter.png"/></a></li>
+      </ul>
+    <div class="copyright">
+      <p><a href="mailto:info@poterbymedia.com">info@poterbymedia.com</a></p>
+      <p>Copyright &copy; 2023 Poterby LTD.</p>
+   
+    </div>
+    </div>
+
+</footer>
 
 
 
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
