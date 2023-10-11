@@ -12,6 +12,7 @@
 body {
   margin: 0px;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 
@@ -431,6 +432,7 @@ a.brand_link:hover {
   font-weight: 600;
   line-height: 58px;
   letter-spacing: 0px;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -490,6 +492,13 @@ a.brand_link:hover {
   border-radius: 0px;
 }
 
+.client .ctalink_wrap {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  justify-content: center;
+
+}
 
 
 .about{
