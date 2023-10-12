@@ -34,14 +34,14 @@
             <a href="/"><img src="../img/poterbyicon.png" alt="poterby image" /></a>
           </div> 
           <nav class="desktop_header">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/work">Works</a></li>
-              <li><a href="/clients">Clients</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/blog">Blog</a></li>
+            <ul class="nav-links">
+              <li><a class="navs" id="home" href="/">Home</a></li>
+              <li><a class="navs" id="services" href="/services">Services</a></li>
+              <li><a class="navs" id="work" href="/work">Works</a></li>
+              <li><a class="navs" id="clients" href="/clients">Clients</a></li>
+              <li><a class="navs" id="about" href="/about">About</a></li>
+              <li><a class="navs" id="contact" href="/contact">Contact</a></li>
+              <li><a class="navs" id="blog" href="/blog">Blog</a></li>
             </ul>
           </nav>
           <div class="social_link">
@@ -137,24 +137,59 @@
    
     <footer>
     
-      <div class="social_link">
-        <ul>
-          <li><a href="https://www.facebook.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/facebook.png"/></a></li>
-          <li><a href="https://www.instagram.com/poterby"><img src="https://img.icons8.com/sf-ultralight/25/000000/instagram-new.png"/> </a></li>
-          <li><a href="https://www.pinterest.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/null/pinterest.png"/></a></li>
-          <li><a href="https://www.linkedin.com/company/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/linkedin.png"/></a></li>
-          <li><a href="https://twitter.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/twitter.png"/></a></li>
-        </ul>
-      <div class="copyright">
-        <p><a href="mailto:info@poterbymedia.com">info@poterbymedia.com</a></p>
-        <p>Copyright &copy; 2023 Poterby LTD.</p>
-     
+      <div class="footer_wrapper">
+        <div class="box1">
+          <div class="logo_wrap">
+            <img src="/img/poterbyicon.png" alt="" class="logo"/>
+                </div>
+                <p class="poterby">Poterby Media</p>
+                <ul>
+                  <li><a href="https://www.facebook.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/facebook.png"/></a></li>
+                  <li><a href="https://www.instagram.com/poterby"><img src="https://img.icons8.com/sf-ultralight/25/000000/instagram-new.png"/> </a></li>
+                  <li><a href="https://www.pinterest.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/null/pinterest.png"/></a></li>
+                  <li><a href="https://www.linkedin.com/company/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/linkedin.png"/></a></li>
+                  <li><a href="https://twitter.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/twitter.png"/></a></li>
+                </ul>
+        </div>
+  
+        <div class="box2">
+          <p class="name_box2">Poterby media</p>
+  
+          <p class="copyright">Copyright &copy; 2023 Poterby LTD.</p>
+  
+        </div>
+        <div class="box3">
+          <p class="get_in_touch">Get in Touch</p>
+          <p class="text">Contact</p>
+          <p class="text">+234 705 078 2156</p>
+          <p class="mail"><a href="mailto:info@poterbymedia.com">info@poterbymedia.com</a></p>
+    
+        </div>
       </div>
-      </div>
+   
+   
   
   </footer>
   </body>
   <script type="text/javascript" src="../src/script.js">
+  </script>
+  <script>
+    
+    let path = window.location.pathname;
+    let page = path.split("/")[1];
+
+    if (page === "") {
+        page = "home";
+    }
+
+    let activeLink = document.getElementById(page.replace('.html', ''));
+
+    if (activeLink) {
+        activeLink.style.color = '#007BFF';
+        activeLink.style.fontWeight = 500; 
+        activeLink.style.borderBottom = "1px solid #007BFF";
+    }
+
   </script>
   <script src="../src/index.js"></script>
 </html>

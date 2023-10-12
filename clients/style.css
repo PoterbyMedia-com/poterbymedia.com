@@ -78,6 +78,12 @@
   bottom: 10px;
 }
 
+.clientstable .client_image_wrap img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+
 @media screen and (max-width: 1050px) {
   .navbar {
     padding: 10px;

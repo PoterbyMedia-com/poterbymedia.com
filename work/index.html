@@ -157,20 +157,41 @@
   </script>
 
 
-  <footer>
-    <h3>We go the extra mile to deliver</h3>
-      <div class="social_link">
-        <ul>
-          <li><a href="https://www.facebook.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/facebook.png"/></a></li>
-          <li><a href="https://www.instagram.com/poterby"><img src="https://img.icons8.com/sf-ultralight/25/000000/instagram-new.png"/> </a></li>
-          <li><a href="https://www.pinterest.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/null/pinterest.png"/></a></li>
-          <li><a href="https://www.linkedin.com/company/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/linkedin.png"/></a></li>
-          <li><a href="https://twitter.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/twitter.png"/></a></li>
-        </ul>
-          <p><a href="mailto:info@poterbymedia.com">info@poterbymedia.com</a></p>
-      </div>
-        <p>Copyright &copy; 2022 Poterby LTD.</p>
-  </footer>
+<footer>
+    
+  <div class="footer_wrapper">
+    <div class="box1">
+      <div class="logo_wrap">
+        <img src="/img/poterbyicon.png" alt="" class="logo"/>
+            </div>
+            <p class="poterby">Poterby Media</p>
+            <ul>
+              <li><a href="https://www.facebook.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/facebook.png"/></a></li>
+              <li><a href="https://www.instagram.com/poterby"><img src="https://img.icons8.com/sf-ultralight/25/000000/instagram-new.png"/> </a></li>
+              <li><a href="https://www.pinterest.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/null/pinterest.png"/></a></li>
+              <li><a href="https://www.linkedin.com/company/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/linkedin.png"/></a></li>
+              <li><a href="https://twitter.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/twitter.png"/></a></li>
+            </ul>
+    </div>
+
+    <div class="box2">
+      <p class="name_box2">Poterby media</p>
+
+      <p class="copyright">Copyright &copy; 2023 Poterby LTD.</p>
+
+    </div>
+    <div class="box3">
+      <p class="get_in_touch">Get in Touch</p>
+      <p class="text">Contact</p>
+      <p class="text">+234 705 078 2156</p>
+      <p class="mail"><a href="mailto:info@poterbymedia.com">info@poterbymedia.com</a></p>
+
+    </div>
+  </div>
+
+
+
+</footer>
     
   <script  src="../src/script.js"></script>
   <script src="../src/index.js"></script>
@@ -188,7 +209,7 @@
     
 
 let path = window.location.pathname;
-let page = path.split("/").pop();
+let page = path.split("/")[1];
 
 if (page === "") {
     page = "home";
