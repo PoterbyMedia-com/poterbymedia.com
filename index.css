@@ -211,6 +211,92 @@ ul {
   right: 1%;
 }
 
+.relative_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+
+.relative_wrapper .flex_wrap {
+  display: flex;
+  align-items: center;
+} 
+
+.relative_wrapper .flex_wrap .expand {
+  width:22px;
+}
+
+.relative_wrapper:hover .flex_wrap .expand {
+  transform: rotate(180deg);
+}
+
+.relative_wrapper .absolute_wrapper {
+  display: none;
+} 
+
+.relative_wrapper:hover .absolute_wrapper {
+  background-color: white;
+  border-radius: 8px;
+  top: 24px;
+  position:absolute;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  padding:1.5rem;
+  z-index: 2;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap:3rem;
+}
+.absolute_wrapper div .heading  {
+  font-weight:600;
+  margin-bottom: 1rem;
+}
+
+
+.list {
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.swipeUp {
+  animation-name: swipeUp;
+  -webkit-animation-name: swipeUp;
+}
+
+@keyframes swipeUp {
+  0% {
+    transform: translateY(5%);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes swipeUp {
+  0% {
+    -webkit-transform: translateY(5%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+  }
+}
+
+
+
+
+.absolute_wrapper div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap:0.7rem;
+}
 /* BUTTONS */
 
 
