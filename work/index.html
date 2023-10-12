@@ -38,13 +38,13 @@
       <div class="menu-icon" id="toggle"> <img src="/img/hamburger.svg" alt="" class="menu-icon"> </div>
     </div>
     <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/work">Works</a></li>
-      <li><a href="/clients">Clients</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/blog">Blog</a></li>
+      <li><a class="navs" id="home" href="/">Home</a></li>
+      <li><a class="navs" id="services" href="/services">Services</a></li>
+      <li><a class="navs" id="work" href="/work">Works</a></li>
+      <li><a class="navs" id="clients" href="/clients">Clients</a></li>
+      <li><a class="navs" id="about" href="/about">About</a></li>
+      <li><a class="navs" id="contact" href="/contact">Contact</a></li>
+      <li><a class="navs" id="blog" href="/blog">Blog</a></li>
     </ul>
     <div class="phone"> <a href="tel:+234 705 078 2156">+234 705 078 2156</a> </div>
   </nav>
@@ -184,6 +184,25 @@
     menuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('show');
     });
+
+    
+
+let path = window.location.pathname;
+let page = path.split("/").pop();
+
+if (page === "") {
+    page = "home";
+}
+
+let activeLink = document.getElementById(page.replace('.html', ''));
+
+if (activeLink) {
+    activeLink.style.color = '#007BFF';
+    activeLink.style.fontWeight = 500; 
+    activeLink.style.borderBottom = "1px solid #007BFF";
+}
+
+
   </script>
 </body>
 </html>
