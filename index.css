@@ -227,8 +227,12 @@ ul {
   width:22px;
 }
 
-.relative_wrapper:hover .flex_wrap .expand {
+.relative_wrapper .flex_wrap .expand {
   transform: rotate(180deg);
+}
+
+.relative_wrapper:hover .flex_wrap .expand {
+  transform: rotate(360deg);
 }
 
 .relative_wrapper .absolute_wrapper {

@@ -92,6 +92,26 @@
     <div class="tab" onclick="openTab('Development')">Development</div>
     <div class="tab" onclick="openTab('Creative')" >Creative</div>
   </div>
+
+  <div class="filter-mobile">
+    <button id="active-filter-wrap" class="filter-mobile-active">
+      <span id="active-filter">All</span>
+      <span><img src="/img/expand.png" alt="" id="rotate" class="expands"/></span>
+   
+      <div id="absolute" class="filter-absolute hide">
+        <!--<div id="fixed" class="fixed"></div>-->
+        <div class="filter-relative">
+          <div class="filter-tab" onclick="openTab('All')">All</div>
+          <div class="filter-tab" onclick="openTab('Digital marketing')">Digital Marketing</div>
+          <div class="filter-tab" onclick="openTab('Development')">Development</div>
+          <div class="filter-tab" onclick="openTab('Creative')" >Creative</div>
+        </div>
+     
+  
+      </div>
+    </button>
+  
+  </div>
       
   <section id="tab1-content" class="tab-content active">
     <!-- Add your images and links here for Tab 1 -->
@@ -151,7 +171,7 @@
 
      data.forEach(item => {
       container.innerHTML += ` <div class="work-slot">
-     <div> <img class="image" src="${item.url}" alt="Bangbet"></div>
+     <div class="wrap"> <img class="image" src="${item.url}" alt="Bangbet"></div>
       <h1><a href="https://www.example.com">Visit Example.com</a></h1>
       <div class="image-headingz"><a href="#tag1">#${item.name}</a></div>
     </div>
@@ -161,8 +181,14 @@
     }
 
     displayImages(data)
-
+    let btn  = document.getElementById("active-filter-wrap")
+    let dropdown = document.querySelector("#absolute")
     function openTab(name) {
+
+      let activeFilter = document.getElementById("active-filter")
+      activeFilter.textContent = name
+      dropdown.classList.add("hide")
+      document.getElementById("rotate").classList.add("expands")
       if (name === 'all') {
         displayImages(data)
         return
@@ -182,9 +208,35 @@
         
       });
 
+      document.getElementById("fixed").addEventListener("click", () => {
+        dropdown.classList.add("hide")
+      })
+
+    
+
+
     //  const activeButton = document.getElementById(category + 'Btn');
       //activeButton.classList.add('active');
     }
+
+   
+    btn.addEventListener("click", (e) => {
+      e.preventDefault()
+    
+       if (dropdown.classList.contains("hide")) {
+        dropdown.classList.remove("hide")
+        document.getElementById("rotate").classList.remove("expands")
+       }
+       else {
+        dropdown.classList.add("hide")
+        document.getElementById("rotate").classList.add("expands")
+       }
+    })
+
+    dropdown.addEventListener("click", (e) => {
+      e.stopPropagation()
+    })
+
   </script>
 
 
