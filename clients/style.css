@@ -26,6 +26,9 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+.client_details .clientstable:hover {
+  border:3px solid #b7b3b3
+}
 .client_details .clientstable {
   padding: 20px;
   width: 400px;
@@ -42,7 +45,12 @@
   align-content: center;
   align-items: center;
 }
-
+small a  {
+  color:black;
+}
+a:hover {
+  border-bottom: 1px solid black;
+}
 .client_details div img {
   width: 100px;
   height: 100px;
