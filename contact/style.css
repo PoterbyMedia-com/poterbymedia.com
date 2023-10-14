@@ -106,10 +106,10 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.form__details form {
+.form__details div {
   padding: 1rem;
 }
-.form__details form input {
+.form__details .div input {
   display: block;
   outline: none;
   margin: 0.5rem auto;
@@ -119,7 +119,7 @@ body {
   background: #f7f7f7;
   border-radius: 10px;
 }
-.form__details form textarea {
+.form__details .div textarea {
   display: block;
   outline: none;
   margin: 0.5rem auto;
@@ -129,7 +129,7 @@ body {
   background: #f7f7f7;
   border-radius: 10px;
 }
-.form__details form button {
+.form__details .div button {
   display: block;
   outline: none;
   margin: 1rem auto;
@@ -142,7 +142,7 @@ body {
   background: #000000;
   border-radius: 30px;
 }
-.form__details form aside {
+.form__details .div aside {
   display: flex;
   align-items: center;
   gap: 2%;

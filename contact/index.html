@@ -98,15 +98,15 @@
       <p><span>Address:</span> 80, Adetokunbo Ademola Street, Victoria Island, Lagos, Nigeria.</p>
     </div>
     <div>
-      <form action="process_form.php" method="post">
+      <div class="div">
         <aside>
-          <input type="text" name="name" placeholder="Your Name">
-          <input type="email" name="email" placeholder="Your Email">
+          <input id="name" type="text" name="name" placeholder="Your Name">
+          <input id="email" type="email" name="email" placeholder="Your Email">
         </aside>
         <input type="text" name="subject" placeholder="Subject">
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <button type="submit">Submit Message</button>
-      </form>
+        <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <button id="submit" >Submit Message</button>
+      </div>
     </div>
   </div>
 
@@ -126,5 +126,27 @@
   </footer>
   <script type="text/javascript" src="../src/script.js"> </script>
   <script src="../src/index.js"></script>
+
+  <script type="module">
+    
+
+  
+let path = window.location.pathname;
+let page = path.split("/")[1];
+
+if (page === "") {
+    page = "home";
+}
+
+let activeLink = document.getElementById(page.replace('.html', ''));
+
+if (activeLink) {
+    activeLink.style.color = '#007BFF';
+    activeLink.style.fontWeight = 500; 
+    activeLink.style.borderBottom = "1px solid #007BFF";
+}
+
+  </script>
+  
 </body>
 </html>
