@@ -44,10 +44,9 @@
       <ul class="nav-links">
         <li><a class="navs" id="home" href="/">Home</a></li>
         <li class="relative_wrapper "><span class="flex_wrap"><a class="navs" id="services" href="/services">Services</a> <img src="/img/expand.png" alt="" class="expand"/></span>
-      
           <div class="absolute_wrapper list swipeUp">
             <div>
-              <p class="heading">Digital Marketing</p>
+              <a href="/digitalmarketing"><p class="heading">Digital Marketing</p></a>
               <ul>
                 <li><a class="navs" href="/">Social Media Marketing</a></li>
                 <li><a class="navs" href="/">Email Marketing</a></li>
@@ -57,7 +56,7 @@
             </div>
     
             <div>
-              <p class="heading">Development</p>
+              <a href="/devlopment"><p class="heading">Development</p></a>
               <ul>
                 <li><a class="navs" href="/">IOS Development</a></li>
                 <li><a class="navs" href="/">Android Development</a></li>
@@ -66,7 +65,7 @@
             </div>
     
             <div>
-              <p class="heading">Creative</p>
+              <a href="/creative"><p class="heading">Creative</p></a>
               <ul>
                 <li><a class="navs" href="/">Graphics Design</a></li>
                 <li><a class="navs" href="/">Branding</a></li>
@@ -97,27 +96,16 @@
       <p><span>Email:</span> info@poterbymedia.com</p>
       <p><span>Address:</span> 80, Adetokunbo Ademola Street, Victoria Island, Lagos, Nigeria.</p>
     </div>
-    <div>
-      <form
- 
->
-<form
-action="https://formspree.io/f/mwkdanpn"
-method="POST"
->
-<label>
-  Your email:
-  <input type="email" name="email">
-</label>
-<label>
-  Your message:
-  <textarea name="message"></textarea>
-</label>
-<!-- your other form fields go here -->
-<button type="submit">Send</button>
+    
+   
+<form  action="https://formspree.io/f/mwkdanpn" method="POST">
+  <input id="email" type="email" name="email" placeholder="Your Email">
+  <textarea id="message" name="message"  cols="30" rows="10" placeholder="Your Message"></textarea>
+  <button type="submit" >Submit Message</button>
 </form>
+
  
-    </div>
+    
   </div>
   <footer>
     
@@ -153,16 +141,10 @@ method="POST"
  
  <!--
 
-       <form  action="https://formspree.io/f/mwkdanpn" method="POST">
-        <input id="email" type="email" name="email" placeholder="Your Email">
-        <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <button type="submit" >Submit Message</button>
-      </form>
  -->
 
 </footer>
-  <script type="text/javascript" src="../src/script.js"> </script>
-  <script src="../src/index.js"></script>
+
 
   <script type="module">
     
