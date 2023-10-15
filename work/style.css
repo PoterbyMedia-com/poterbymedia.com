@@ -66,7 +66,7 @@ overflow-x: hidden;
   margin-top:2rem;
   margin-bottom:5rem;
   border-radius: 16px;
-  padding:0px 1rem;
+  padding:0px 5rem;
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
@@ -94,7 +94,14 @@ overflow-x: hidden;
   border-radius: 6px;
 }
 
-
+@media screen and (max-width:1280px) {
+  .tab-content.active {
+   
+    padding:0px 1rem;
+   
+  
+  }
+}
 
 @media screen and (max-width:550px) {
   .tab-container {
@@ -162,4 +169,23 @@ overflow-x: hidden;
  .tab-content.active {
   margin-top:0rem;
  }
+
+ .work-slot{
+  height: 100%;
+  width: 95%;
+
+}
+
+.work-slot .wrap  {
+  width:100%;
+  height: 350px;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+
+}
+.work-slot div .image {
+  width:100%;
+  height: 100%;
+  border-radius: 6px;
+}
 }
