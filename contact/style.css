@@ -111,6 +111,10 @@ body {
 .form__details div {
   padding: 1rem;
 }
+.form__details form {
+  padding: 1rem;
+  width:430px;
+}
 .form__details form input {
   display: block;
   outline: none;
@@ -141,6 +145,7 @@ body {
   cursor: pointer;
   border: none;
   width: 60%;
+  height: 35px;
   margin: auto;
   color: white;
   padding: 0.5rem;
@@ -306,4 +311,12 @@ body {
     font-size: 25px;
   }
 
+}
+}
+
+@media screen and (max-width:600px) {
+  .form__details form {
+    padding: 0.5rem;
+    width:100%;
+  }
 }
