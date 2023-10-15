@@ -98,15 +98,25 @@
       <p><span>Address:</span> 80, Adetokunbo Ademola Street, Victoria Island, Lagos, Nigeria.</p>
     </div>
     <div>
-      <div class="div">
-        <aside>
-          <input id="name" type="text" name="name" placeholder="Your Name">
-          <input id="email" type="email" name="email" placeholder="Your Email">
-        </aside>
-        <input type="text" name="subject" placeholder="Subject">
-        <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <button id="submit" >Submit Message</button>
-      </div>
+      <form
+ 
+>
+<form
+action="https://formspree.io/f/mwkdanpn"
+method="POST"
+>
+<label>
+  Your email:
+  <input type="email" name="email">
+</label>
+<label>
+  Your message:
+  <textarea name="message"></textarea>
+</label>
+<!-- your other form fields go here -->
+<button type="submit">Send</button>
+</form>
+ 
     </div>
   </div>
 
