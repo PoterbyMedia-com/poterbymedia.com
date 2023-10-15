@@ -34,20 +34,53 @@
 <body>
   <nav class="navbar">
     <div class="top-class">
-      <div class="logo"><a href="/img/poterbyicon.png"><img src="/img/poterbyicon.png" alt="Poterby Media Logo" class="logo"/></a></div>
+      <div class="logo"><a href="/"><img src="img/poterbyicon.png" alt="Poterby Media Logo" class="logo"/></a></div>
       <div class="mob-phone"><a href="tel:+234 705 078 2156">+234 705 078 2156</a></div>
-      <div class="menu-icon" id="toggle"><img src="/img/hamburger.svg" alt="" class="menu-icon"></div>
+      <div class="menu-icon" id="toggle"><img src="./img/hamburger.svg" alt="" class="menu-icon"></div>
     </div>
     <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/work">Works</a></li>
-      <li><a href="/clients">Clients</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/blog">Blog</a></li>
+      <li><a class="navs" id="home" href="/">Home</a></li>
+      <li class="relative_wrapper "><span class="flex_wrap"><a class="navs" id="services" href="/services">Services</a> <img src="/img/expand.png" alt="" class="expand"/></span>
+      
+        <div class="absolute_wrapper list swipeUp">
+          <div>
+            <a href="/digitalmarketing"><p class="heading">Digital Marketing</p></a>
+            <ul>
+              <li><a class="navs" href="https://poterbymedia.com/services/socialmediamarketing/">Social Media Marketing</a></li>
+              <li><a class="navs" href="https://poterbymedia.com/services/emailmarketing/">Email Marketing</a></li>
+              <li><a class="navs" href="https://poterbymedia.com/services/onlineadvertising/">Online Advertising</a></li>
+              <li><a class="navs" href="https://poterbymedia.com/services/searchengineoptimization/">Search Engine Optimization</a></li>
+            </ul>
+          </div>
+  
+          <div>
+            <a href="https://poterbymedia.com/services/development/"><p class="heading">Development</p></a>
+            <ul>
+              <li><a class="navs" href="https://poterbymedia.com/services/development/iosappdevelopment/">iOS Development</a></li>
+              <li><a class="navs" href="https://poterbymedia.com/services/development/androidappdevelopment/">Android Development</a></li>
+              <li><a class="navs" href="https://poterbymedia.com/services/development/">UI/UX Design</a></li>
+            </ul>
+          </div>
+  
+          <div>
+            <a href="https://poterbymedia.com/services/creative/"><p class="heading">Creative</p></a>
+            <ul>
+              <li><a class="navs" href="https://poterbymedia.com/services/creative/">Graphics Design</a></li>
+              <li><a class="navs" href="https://poterbymedia.com/services/creative/">Branding</a></li>
+            </ul>
+          </div>
+  
+        </div>
+      </li>
+        
+      
+      <li><a class="navs" id="work" href="/work">Works</a></li>
+      <li><a class="navs" id="clients" href="/clients">Clients</a></li>
+      <li><a class="navs" id="about" href="/about">About</a></li>
+      <li><a class="navs" id="contact" href="/contact">Contact</a></li>
+      <li><a class="navs" id="blog" href="/blog">Blog</a></li>
     </ul>
-    <div class="phone"><a href="tel:+234 705 078 2156">+234 705 078 2156</a></div>
+    <div class="phone"> <a href="tel:+234 705 078 2156">+234 705 078 2156</a> </div>
   </nav>
 
   <section class="smmaslide">
@@ -67,13 +100,19 @@
   </section>
 
 
-  
-
-
-  <section class="smmatab1">
+  <section class="smmatab1_wrapper">
     <div class="smmatab1heading"><h1> Contents with no limits</h1></div>
-    <div class="smmaimg1"><img src="/img/1.png"/></div>
-    <div class="headxx">
+   <div class="smmatab1">
+    <div class="img_wrapper">
+      <div class="smmaimg1"><img src="/img/1.png"/></div>
+     </div>
+      <div class="headxx">
+    <div
+    data-aos="fade-left"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+    >
       <div class="head1">Your Brand,First</div>
       <p class="textx">
         We have put together hundreds of successful
@@ -81,18 +120,37 @@
         increase leads, transactions, and qualified website traffic.
         We'll do the same for you.
       </p>
-
-      <div class="head1">Innovation</div>
-      <p class="textx">
-        We stay ahead of trends to ensure your brand remains relevant and stands out in a fast-paced digital world.
-      </p>
-
-      <div class="head1">Collaboration </div>
-      <p class="textx">
-        Your vision meets our expertise, resulting in a partnership that's built on communication and shared goals.
-      </p>
-    </div> 
+    </div>
+  
+       <div
+       data-aos="fade-left"
+      data-aos-delay="60"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+       >
+        <div class="head1">Innovation</div>
+        <p class="textx">
+          We stay ahead of trends to ensure your brand remains relevant and stands out in a fast-paced digital world.
+        </p>
+       </div>
+  
+       <div
+       data-aos="fade-left"
+      data-aos-delay="80"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+       >
+        <div class="head1">Collaboration</div>
+        <p class="textx">
+          Your vision meets our expertise, resulting in a partnership that's built on communication and shared goals.
+        </p>
+       </div>
+      </div> 
+   </div>
   </section>
+
+
+
 
   <section class="CTA1">
     <div class="touch"><p>Get in touch with us today</p></div>
@@ -104,7 +162,7 @@
    
   <section class="tab1"> 
     <div class="tab1text">
-      <div class="tab1textheader">Pay Per Click <p>(Facebook & Instagram)</p> </div>
+      <div class="tab1textheader">Pay Per Click <!--<p>(Facebook & Instagram)</p>--> </div>
         <p class="tab1bodytext">
           We will guide you through the intricacies of PPC, Google Ads, Bing Ads, helping you maximize your reach, optimize your campaigns, 
           and drive targeted traffic to your website. 
