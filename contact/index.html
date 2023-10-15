@@ -44,10 +44,9 @@
       <ul class="nav-links">
         <li><a class="navs" id="home" href="/">Home</a></li>
         <li class="relative_wrapper "><span class="flex_wrap"><a class="navs" id="services" href="/services">Services</a> <img src="/img/expand.png" alt="" class="expand"/></span>
-      
           <div class="absolute_wrapper list swipeUp">
             <div>
-              <p class="heading">Digital Marketing</p>
+              <a href="/digitalmarketing"><p class="heading">Digital Marketing</p></a>
               <ul>
                 <li><a class="navs" href="/">Social Media Marketing</a></li>
                 <li><a class="navs" href="/">Email Marketing</a></li>
@@ -57,7 +56,7 @@
             </div>
     
             <div>
-              <p class="heading">Development</p>
+              <a href="/devlopment"><p class="heading">Development</p></a>
               <ul>
                 <li><a class="navs" href="/">IOS Development</a></li>
                 <li><a class="navs" href="/">Android Development</a></li>
@@ -66,7 +65,7 @@
             </div>
     
             <div>
-              <p class="heading">Creative</p>
+              <a href="/creative"><p class="heading">Creative</p></a>
               <ul>
                 <li><a class="navs" href="/">Graphics Design</a></li>
                 <li><a class="navs" href="/">Branding</a></li>
@@ -97,34 +96,77 @@
       <p><span>Email:</span> info@poterbymedia.com</p>
       <p><span>Address:</span> 80, Adetokunbo Ademola Street, Victoria Island, Lagos, Nigeria.</p>
     </div>
-    <div>
-      <form action="process_form.php" method="post">
-        <aside>
-          <input type="text" name="name" placeholder="Your Name">
-          <input type="email" name="email" placeholder="Your Email">
-        </aside>
-        <input type="text" name="subject" placeholder="Subject">
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <button type="submit">Submit Message</button>
-      </form>
-    </div>
-  </div>
+    
+   
+<form  action="https://formspree.io/f/mzblyaeb"
+method="POST">
+  <input id="email" type="email" name="email" placeholder="Your Email">
+  <textarea id="message" name="message"  cols="30" rows="10" placeholder="Your Message"></textarea>
+  <button type="submit" >Submit Message</button>
+</form>
 
+ 
+    
+  </div>
   <footer>
-    <h3>We go the extra mile to deliver</h3>
-      <div class="social_link">
-        <ul>
-          <li><a href="https://www.facebook.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/facebook.png"/></a></li>
-          <li><a href="https://www.instagram.com/poterby"><img src="https://img.icons8.com/sf-ultralight/25/000000/instagram-new.png"/> </a></li>
-          <li><a href="https://www.pinterest.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/null/pinterest.png"/></a></li>
-          <li><a href="https://www.linkedin.com/company/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/linkedin.png"/></a></li>
-          <li><a href="https://twitter.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/twitter.png"/></a></li>
-        </ul>
-        <p><a href="mailto:info@poterbymedia.com">info@poterbymedia.com</a></p>
+    
+    <div class="footer_wrapper">
+      <div class="box1">
+        <div class="logo_wrap">
+          <img src="/img/poterbyicon.png" alt="" class="logo"/>
+              </div>
+              <p class="poterby">Poterby Media</p>
+              <ul>
+                <li><a href="https://www.facebook.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/facebook.png"/></a></li>
+                <li><a href="https://www.instagram.com/poterby"><img src="https://img.icons8.com/sf-ultralight/25/000000/instagram-new.png"/> </a></li>
+                <li><a href="https://www.pinterest.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/null/pinterest.png"/></a></li>
+                <li><a href="https://www.linkedin.com/company/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/linkedin.png"/></a></li>
+                <li><a href="https://twitter.com/poterbymedia"><img src="https://img.icons8.com/sf-ultralight/25/000000/twitter.png"/></a></li>
+              </ul>
       </div>
-      <p>Copyright &copy; 2022 Poterby LTD.</p>
-  </footer>
-  <script type="text/javascript" src="../src/script.js"> </script>
-  <script src="../src/index.js"></script>
+
+      <div class="box2">
+        <p class="name_box2">Poterby media</p>
+
+        <p class="copyright">Copyright &copy; 2023 Poterby LTD.</p>
+
+      </div>
+      <div class="box3">
+        <p class="get_in_touch">Get in Touch</p>
+        <p class="text">Contact</p>
+        <p class="text">+234 705 078 2156</p>
+        <p class="mail"><a href="mailto:info@poterbymedia.com">info@poterbymedia.com</a></p>
+  
+      </div>
+    </div>
+ 
+ <!--
+
+ -->
+
+</footer>
+
+
+  <script type="module">
+    
+
+  
+let path = window.location.pathname;
+let page = path.split("/")[1];
+
+if (page === "") {
+    page = "home";
+}
+
+let activeLink = document.getElementById(page.replace('.html', ''));
+
+if (activeLink) {
+    activeLink.style.color = '#007BFF';
+    activeLink.style.fontWeight = 500; 
+    activeLink.style.borderBottom = "1px solid #007BFF";
+}
+
+  </script>
+  
 </body>
 </html>

@@ -93,11 +93,13 @@ body {
 /**********************contact us page
 ************************/
 .contact-wrapper {
-  height: 202px;
+  padding:1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  font-size: 30px;
+  color:#f0f0f0;
   background: #e3e3e3;
 }
 .form__details {
@@ -106,15 +108,20 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.form__details div {
+  padding: 1rem;
+}
 .form__details form {
   padding: 1rem;
+  width:430px;
 }
 .form__details form input {
   display: block;
   outline: none;
   margin: 0.5rem auto;
-  border: none;
+  border: 1px solid gray;
   width: 100%;
+  height:35px;
   padding: 0.5rem;
   background: #f7f7f7;
   border-radius: 10px;
@@ -124,7 +131,9 @@ body {
   outline: none;
   margin: 0.5rem auto;
   border: none;
+  resize: none;
   width: 100%;
+  border: 1px solid gray;
   padding: 0.5rem;
   background: #f7f7f7;
   border-radius: 10px;
@@ -136,13 +145,14 @@ body {
   cursor: pointer;
   border: none;
   width: 60%;
+  height: 35px;
   margin: auto;
   color: white;
   padding: 0.5rem;
   background: #000000;
   border-radius: 30px;
 }
-.form__details form aside {
+.form__details .div aside {
   display: flex;
   align-items: center;
   gap: 2%;
@@ -301,4 +311,12 @@ body {
     font-size: 25px;
   }
 
+}
+}
+
+@media screen and (max-width:600px) {
+  .form__details form {
+    padding: 0.5rem;
+    width:100%;
+  }
 }

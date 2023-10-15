@@ -20,6 +20,7 @@ html,body {
 
 a {
   text-decoration: none !important;
+  color:black;
 }
 ul {
   list-style: none !important;
@@ -258,6 +259,15 @@ ul {
   margin-bottom: 1rem;
 }
 
+.absolute_wrapper div a p {
+  color: black;
+}
+
+.absolute_wrapper div a p:hover {
+  transform: scale(1.03);
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
 
 .list {
   -webkit-animation-duration: 0.8s;
@@ -444,6 +454,13 @@ a.brand_link:hover {
   font-size: 17px;
 }
 
+.what_we_do .Whatwedo-boxes a h3:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+
+}
+
 
 .what_we_do .note_on_what_we_do {
   margin: auto;
@@ -549,28 +566,35 @@ a.brand_link:hover {
   margin: 60px 0;
   display: flex;
   align-items: center;
-  height:500px;
+  height:600px;
+  width:100%;
   background-color: #F4F4F4;
 }
 
 .eye_catching .note{
-  flex: 1;
+  display: flex;
   flex-direction: column;
+  width:50%;
+  height: 100%;
+  justify-content: center;
+  align-items: start;
   gap:2rem;
-  padding: 40px 6px;
+  padding: 40px 3rem;
 }
 .eye_catching .note .head{
   font-weight: 600;
   margin-bottom: 20px;
   line-height: 1.3;
-  font-size: 45px;
+  width:95%;
+  font-size: 50px;
   font-family: 'Inter', sans-serif;
 
 }
 .eye_catching .note .text{
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   line-height: 1.8;
-  width: 100%;
+
+  width: 95%;
   text-align: start;
   margin-bottom: 30px ;
 
@@ -581,12 +605,13 @@ a.brand_link:hover {
 .eye_catching .picz{
   flex: 1;
   display: flex;
+  width:50%;
   height:100%;
   justify-content: end;
   
 }
 .eye_catching .picz img{
- width: 600px;
+ width: 100%;
  height:100%;
 
 }
@@ -1090,7 +1115,7 @@ section .works_wrapper {
   margin:0px;
 }
 section .works_wrapper .works_images {
-width:200px;
+width:350px;
 height:100%;
 display: flex;
 flex-direction: column;
@@ -1099,11 +1124,7 @@ align-items: start;
 gap:2rem;
 }
 
-section .works_wrapper .works_images img {
-  width: 100%;
-  height:200px;
 
-}
 section .works_wrapper {
   width: 100%;
   display: flex;
@@ -1115,7 +1136,7 @@ section .works_wrapper {
   margin:0px;
 }
 section .works_wrapper .works_images {
-width:300px;
+width:350px;
 height:100%;
 display: flex;
 flex-direction: column;
@@ -1138,7 +1159,7 @@ section .works_wrapper .works_images img {
   width: 100%;
   border-radius: 6px;
   border: 1px solid #f9f9f9d1;
-  height:300px;
+  height:350px;
 
 }
 
@@ -1942,24 +1963,25 @@ footer p {
   .eye_catching{
     flex-direction: column;
     text-align: start;
-    height:1000px;
+    height:1200px;
   }
   .eye_catching .note {
-    padding: 5px;
+    padding: 0px 2rem;
     margin: 20px;
     height:500px;
   display: flex;
-  align-items: center;
+  width: 100%;
+  align-items: start;
   justify-content: center;
   }
 
   .eye_catching .note .head {
-  font-size: 30px;
+  font-size: 35px;
   }
   .eye_catching .picz {
    margin-top: 0px;
    flex: none;
-   height:500px;
+   height:700px;
    width: 100%;
   }
   .eye_catching .picz img{
