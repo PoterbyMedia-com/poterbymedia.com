@@ -119,7 +119,7 @@ data-aos="fade-left"
   <section class="bodyview">
     <div class="container">
       <div class="service">
-        <img src="social-media-strategy-image-url.jpg" alt="Social Media Strategy" class="service-image">
+        <img src="https://icons8.com/icon/u_lCeT2A3iC9/media" alt="Social Media Strategy" class="service-image">
         <div class="service-content">
           <h2 class="service-title">Social Media Management</h2>
           <p class="service-description">We tailor-make data-driven strategies that align with your brand's objectives, ensuring your message reaches the right audience at the right time.</p>
@@ -180,10 +180,19 @@ data-aos="fade-left"
 
 
 
-  <section class="smmatab1">
+  <section class="smmatab1_wrapper">
     <div class="smmatab1heading"><h1> Contents with no limits</h1></div>
-    <div class="smmaimg1"><img src="/img/1.png"/></div>
-    <div class="headxx">
+   <div class="smmatab1">
+    <div class="img_wrapper">
+      <div class="smmaimg1"><img src="/img/1.png"/></div>
+     </div>
+      <div class="headxx">
+    <div
+    data-aos="fade-left"
+      data-aos-delay="30"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+    >
       <div class="head1">Your Brand,First</div>
       <p class="textx">
         We have put together hundreds of successful
@@ -191,18 +200,35 @@ data-aos="fade-left"
         increase leads, transactions, and qualified website traffic.
         We'll do the same for you.
       </p>
-
-      <div class="head1">Innovation</div>
-      <p class="textx">
-        We stay ahead of trends to ensure your brand remains relevant and stands out in a fast-paced digital world.
-      </p>
-
-      <div class="head1">Collaboration</div>
-      <p class="textx">
-        Your vision meets our expertise, resulting in a partnership that's built on communication and shared goals.
-      </p>
-    </div> 
+    </div>
+  
+       <div
+       data-aos="fade-left"
+      data-aos-delay="60"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+       >
+        <div class="head1">Innovation</div>
+        <p class="textx">
+          We stay ahead of trends to ensure your brand remains relevant and stands out in a fast-paced digital world.
+        </p>
+       </div>
+  
+       <div
+       data-aos="fade-left"
+      data-aos-delay="80"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+       >
+        <div class="head1">Collaboration</div>
+        <p class="textx">
+          Your vision meets our expertise, resulting in a partnership that's built on communication and shared goals.
+        </p>
+       </div>
+      </div> 
+   </div>
   </section>
+
 
   <section class="CTA1">
     <div class="touch"> <p>Get in touch with us today</p></div>
@@ -211,9 +237,14 @@ data-aos="fade-left"
   </section>
   
   <!-- Content Section 1 Start -->
-   
+
   <section class="tab1"> 
-    <div class="tab1text">
+    <div 
+    data-aos="fade-right"
+    data-aos-delay="30"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+    class="tab1text">
       <div class="tab1textheader">Meta <p>(Facebook, <p>Instagram & Threads)</p> </div>
         <p class="tab1bodytext">
           We have put together hundreds of successful
@@ -223,7 +254,13 @@ data-aos="fade-left"
         </p>
         <a class="ctalink" href="https://poterbymedia.com/contact/">Enquire</a>
     </div>
-    <div class="tab1image"><img src="/img/istockphoto-1456322124-612x612.jpg"/></div>
+
+    <div
+    data-aos="fade-left"
+    data-aos-delay="30"
+    data-aos-duration="700"
+    data-aos-easing="ease-in-out"
+    class="tab1image"><img src="/img/istockphoto-1456322124-612x612.jpg"/></div>
   </section>
 
   <section class="tab2"> 
@@ -332,6 +369,30 @@ data-aos="fade-left"
     navLinks.classList.toggle('show');
   });
 </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
 
+  let path = window.location.pathname;
+  let page = path.split("/").pop();
+
+  if (page === "") {
+      page = "home";
+  }
+
+  let activeLink = document.getElementById(page.replace('.html', ''));
+
+  if (activeLink) {
+      activeLink.style.color = '#007BFF';
+      activeLink.style.fontWeight = 500; 
+      activeLink.style.borderBottom = "1px solid #007BFF";
+  }
+
+</script>
+<script type="text/javascript" src="/src/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
   
