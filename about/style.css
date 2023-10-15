@@ -1,22 +1,4 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-}
-body {
-  margin: 0px;
-  font-family: "Inter", sans-serif;
-}
+
 /* navbar style section */
 .navbar {
   width: 100%;
@@ -123,6 +105,11 @@ body {
   border: 6px solid var(--section-bg);
 }
 
+img.about-img{
+  width: 390px;
+  height:min-content;
+}
+
 .heart-icon {
   position: absolute;
   left: -1.9rem;
@@ -168,13 +155,6 @@ body {
 .about .content-title,
 .about .content-description {
   text-align: left;
-}
-
-.about-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
 }
 
 .button {
