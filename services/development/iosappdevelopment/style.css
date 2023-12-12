@@ -28,6 +28,8 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 14px;
+    margin-bottom: 80px;
+
    }
 
 .h1{
